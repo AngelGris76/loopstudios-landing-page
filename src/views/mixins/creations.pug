@@ -1,0 +1,5 @@
+mixin creation(item)
+  li.creation__item 
+    a.creation__link(href="#" aria-label=`${item.text}`)
+      img.creation__img(src=`assets/images/desktop/image-${item.img}.jpg`, alt="" srcset=`assets/images/mobile/image-${item.img}.jpg 1.5x`) 
+      = item.text

@@ -1,0 +1,13 @@
+include ../mixins/creations
+
+main.maincontent
+  article.article-us
+    h2.article-us__title The leader in interactive VR
+    p.article-us__description Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.
+
+  article.creations
+    h2.creations.title our creations 
+    ul.creation
+      each item in creations 
+        +creation(item)
+    a.creations__link(href="#" aria-label ="see all products") see all 

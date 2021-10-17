@@ -1,0 +1,14 @@
+include ../mixins/menuitem
+include ../mixins/socialitem
+
+footer.footer
+  nav.footernavbar
+    img.footer__logo(src="assets/images/logo.svg" alt="loop studios")
+    ul.footermenu
+      each item in menuItems 
+        +menuItem("footermenu", item)
+  nav.socialnavbar
+    ul.sociallist
+      each item in socialItems 
+        +socialItem(item)
+    small.copyright © 2021 Loopstudios. All rights reserved.
