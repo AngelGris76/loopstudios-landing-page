@@ -4,11 +4,11 @@ include ../mixins/socialitem
 footer.footer
   nav.footernavbar
     img.footer__logo(src="assets/images/logo.svg" alt="loop studios")
-    ul.footermenu
+    ul.footermenu.reset-list
       each item in menuItems 
         +menuItem("footermenu", item)
   nav.socialnavbar
-    ul.sociallist
+    ul.sociallist.reset-list
       each item in socialItems 
         +socialItem(item)
     small.copyright © 2021 Loopstudios. All rights reserved.

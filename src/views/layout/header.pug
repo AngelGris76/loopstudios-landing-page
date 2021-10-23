@@ -2,10 +2,10 @@ include ../mixins/menuitem
 
 header.header 
   nav.mainnavbar 
-    img(src="assets/images/logo.svg", alt="loop studios")
+    img.logo(src="assets/images/logo.svg", alt="loop studios")
     button.togglemenubutton(aria-label="main menu toggle button" aria-expanded="false")
-      img(src="assets/images/icon-hamburger.svg" alt="")
-    ul.mainmenu
+      img.button-img(src="assets/images/icon-hamburger.svg" alt="")
+    ul.mainmenu.reset-list.menu--translate.menu--hide
       each item in menuItems 
         +menuItem("mainmenu", item)
   h1.title Immersive experiences that deliver
