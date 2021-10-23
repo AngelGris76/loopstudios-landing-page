@@ -1,0 +1,58 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-block: 3.8rem;
+
+  font-family: "Alata", sans-serif;
+
+  background-color: var(--Black);
+}
+
+.footernavbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer__logo {
+  width: 150px;
+}
+
+.footermenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+
+  &__link {
+    text-decoration: none;
+    color: var(--White);
+  }
+}
+
+.socialnavbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.sociallist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+}
+
+.copyright {
+  font-size: 1rem;
+  color: var(--Dark-Gray);
+}

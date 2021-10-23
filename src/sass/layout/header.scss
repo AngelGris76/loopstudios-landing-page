@@ -1,0 +1,84 @@
+.header {
+  height: 177vw;
+  padding-top: 3rem;
+  margin-bottom: 5.7rem;
+
+  background-image: url("../assets/images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mainnavbar {
+  position: relative;
+  width: 90%;
+  margin-inline: auto;
+  margin-bottom: 10.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  width: 150px;
+}
+
+.togglemenubutton {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.mainmenu {
+  position: absolute;
+  top: -3rem;
+  left: -5vw;
+  width: 100vw;
+  height: 100vh;
+  padding-block: 15rem;
+  padding-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  background-color: var(--Black);
+
+  transition: transform 0.5s;
+  z-index: -1;
+
+  &__link {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: var(--White);
+  }
+}
+
+.menu--translate {
+  transform: translateX(100vw);
+}
+
+.menu--hide {
+  display: none;
+}
+
+.title {
+  width: 90%;
+  margin-inline: auto;
+  padding: 0.5em 0.7em 0.4em 0.55em;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: min(10.8vw, 4.7rem);
+  text-transform: uppercase;
+  line-height: 1;
+
+  border: 2px solid var(--White);
+  color: var(--White);
+}

@@ -1,0 +1,248 @@
+/*
+font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  font-size: 94%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.body {
+  min-height: 100vh;
+}
+
+.reset-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.show-menu {
+  overflow: hidden;
+}
+
+.header {
+  height: 177vw;
+  padding-top: 3rem;
+  margin-bottom: 5.7rem;
+  background-image: url("../assets/images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mainnavbar {
+  position: relative;
+  width: 90%;
+  margin-inline: auto;
+  margin-bottom: 10.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  width: 150px;
+}
+
+.togglemenubutton {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.mainmenu {
+  position: absolute;
+  top: -3rem;
+  left: -5vw;
+  width: 100vw;
+  height: 100vh;
+  padding-block: 15rem;
+  padding-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--Black);
+  transition: transform 0.5s;
+  z-index: -1;
+}
+.mainmenu__link {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--White);
+}
+
+.menu--translate {
+  transform: translateX(100vw);
+}
+
+.menu--hide {
+  display: none;
+}
+
+.title {
+  width: 90%;
+  margin-inline: auto;
+  padding: 0.5em 0.7em 0.4em 0.55em;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: min(10.8vw, 4.7rem);
+  text-transform: uppercase;
+  line-height: 1;
+  border: 2px solid var(--White);
+  color: var(--White);
+}
+
+.maincontent {
+  width: 90%;
+  padding-top: 66.8vw;
+  margin-inline: auto;
+  margin-bottom: 6.5rem;
+  background-image: url("../assets/images/mobile/image-interactive.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+}
+
+.article-us {
+  width: 90%;
+  margin-inline: auto;
+  margin-bottom: 6.1rem;
+  text-align: center;
+  background-color: var(--White);
+}
+.article-us__title {
+  margin-bottom: 0.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: min(8.5vw, 3.3rem);
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.article-us__description {
+  font-family: "Alata", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--Dark-Gray);
+}
+
+.creations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.creations-title {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: min(8.5vw, 3.3rem);
+  font-weight: inherit;
+}
+.creations-link {
+  padding: 0.7em 2.4em;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.35em;
+  text-decoration: none;
+  color: var(--Black);
+  border: 2px solid var(--Black);
+}
+
+.creation {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+.creation__link {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.creation__img {
+  display: block;
+  max-width: 100%;
+}
+.creation__text {
+  position: absolute;
+  width: 9ch;
+  left: 1em;
+  bottom: 0.7em;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: var(--White);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 3.8rem;
+  font-family: "Alata", sans-serif;
+  background-color: var(--Black);
+}
+
+.footernavbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer__logo {
+  width: 150px;
+}
+
+.footermenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+.footermenu__link {
+  text-decoration: none;
+  color: var(--White);
+}
+
+.socialnavbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.sociallist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+}
+
+.copyright {
+  font-size: 1rem;
+  color: var(--Dark-Gray);
+}
