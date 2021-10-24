@@ -9,6 +9,15 @@
   font-family: "Alata", sans-serif;
 
   background-color: var(--Black);
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-inline: 11vw;
+    padding-block: 2.9rem 2.9rem;
+  }
 }
 
 .footernavbar {
@@ -17,6 +26,11 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+
+  @media screen and (min-width: 1024px) {
+    align-items: flex-start;
+    gap: 1.8rem;
+  }
 }
 
 .footer__logo {
@@ -31,7 +45,16 @@
   gap: 1.5rem;
   margin-bottom: 4rem;
 
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1.5rem;
+
+    margin-bottom: 0;
+  }
+
   &__link {
+    position: relative;
     text-decoration: none;
     color: var(--White);
   }
@@ -43,6 +66,10 @@
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+
+  @media screen and (min-width: 1024px) {
+    align-items: flex-end;
+  }
 }
 
 .sociallist {
@@ -50,6 +77,10 @@
   align-items: center;
   justify-content: center;
   gap: 1.1rem;
+
+  &__link {
+    position: relative;
+  }
 }
 
 .copyright {

@@ -1,8 +1,3 @@
-/*
-font-family: 'Alata', sans-serif;
-font-family: 'Josefin Sans', sans-serif;
-*/
-
 :root {
   --White: hsl(0, 0%, 100%);
   --Black: hsl(0, 0%, 0%);
@@ -31,4 +26,23 @@ font-family: 'Josefin Sans', sans-serif;
 
 .show-menu {
   overflow: hidden;
+}
+
+.menu--hover {
+  @media screen and (min-width: 1280px) {
+    &:hover {
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -0.5em;
+        width: 1.8rem;
+        height: 0;
+        border-bottom: 2px solid var(--White);
+        transform: translateX(-50%);
+      }
+    }
+  }
 }
